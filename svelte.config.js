@@ -17,7 +17,15 @@ const config = {
   kit: {
     // hydrate the <div id="svelte"> element in src/app.html
     target: "#svelte",
-    adapter: adapterStatic()
+    adapter: adapterStatic(),
+    vite: {
+      optimizeDeps: {
+        include: ['blurhash'],
+      },
+      ssr: {
+        noExternal: ['svelte-image'],
+      },
+    },
   }
 }
 

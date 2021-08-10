@@ -1,11 +1,14 @@
 <script>
+  import Image from "svelte-image"
 </script>
 
 <svelte:head>
   <title>Home | bigspeed</title>
 </svelte:head>
 <div class="container">
-  <img class="profile" src="/bigspeed.png" alt="bigspeed" />
+  <div class="profile">
+    <Image src="bigspeed.png" alt="bigspeed" sizes="(max-width: 250px) 27vw, 250px" />
+  </div>
   <div class="text-container">
     <span class="hello">Hi! I'm <strong>Andrew</strong>.</span>
     <span class="subtitle">I'm a 16-year-old FPV drone pilot from North Carolina.</span>
@@ -45,9 +48,11 @@
   }
 
   .profile {
-    width: min(250px, 27vw);
-    height: min(250px, 27vw);
-    border-radius: 125px;
+    width: 250px;
+    height: 250px;
+
+    border-radius: 100%;
+    overflow: hidden;
 
     object-fit: cover;
 
@@ -116,18 +121,13 @@
     filter: invert();
   }
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 898px) {
     .container, .social-container {
       flex-direction: column;
     }
     
     .social-container {
       gap: 20px;
-    }
-
-    .profile {
-      width: 250px;
-      height: 250px;
     }
   }
 </style>
