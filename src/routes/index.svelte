@@ -5,7 +5,7 @@
   <title>Home | bigspeed</title>
 </svelte:head>
 <div class="container">
-  <img class="profile" src="/bigspeed.jpg" alt="bigspeed" />
+  <img class="profile" src="/bigspeed.png" alt="bigspeed" />
   <div class="text-container">
     <span class="hello">Hi! I'm <strong>Andrew</strong>.</span>
     <span class="subtitle">I'm a 16-year-old FPV drone pilot from North Carolina.</span>
