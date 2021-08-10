@@ -9,15 +9,21 @@
   <div class="text-container">
     <span class="hello">Hi! I'm <strong>Andrew</strong>.</span>
     <span class="subtitle">I'm a 16-year-old FPV drone pilot from North Carolina.</span>
+
     <div class="social-container">
-      <div class="social github">
-        <img class="social-icon" src="/github.svg" alt="Github logo" />
-        <span class="social-label">bigspeedfpv</span>
-      </div>
-      <div class="social youtube">
-        <img class="social-icon" src="/youtube.svg" alt="YouTube logo" />
-        <span class="social-label">bigspeed</span>
-      </div>
+      <a class="social-link" href="https://github.com/bigspeedfpv">
+        <div class="social github">
+          <img class="social-icon" src="/github.svg" alt="Github logo" />
+          <span class="social-label">bigspeedfpv</span>
+        </div>
+      </a>
+
+      <a class="social-link" href="https://www.youtube.com/channel/UCreBMQ7cWcrzdvrrBK1HaXQ">
+        <div class="social youtube">
+          <img class="social-icon" src="/youtube.svg" alt="YouTube logo" />
+          <span class="social-label">bigspeed</span>
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -35,12 +41,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 25px;
   }
 
   .profile {
-    width: 250px;
-    height: 250px;
+    width: min(250px, 27vw);
+    height: min(250px, 27vw);
     border-radius: 125px;
 
     object-fit: cover;
@@ -72,8 +78,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     padding: 10px;
+
+
+  }
+
+  .social-link {
+    text-decoration: inherit;
+    color: inherit;
   }
 
   .social {
@@ -106,6 +119,15 @@
   @media only screen and (max-width: 750px) {
     .container, .social-container {
       flex-direction: column;
+    }
+    
+    .social-container {
+      gap: 20px;
+    }
+
+    .profile {
+      width: 250px;
+      height: 250px;
     }
   }
 </style>
