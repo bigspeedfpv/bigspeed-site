@@ -8,7 +8,7 @@
   <img class="profile" src="/bigspeed.jpg" alt="bigspeed" />
   <div class="text-container">
     <span class="hello">Hi! I'm <strong>Andrew</strong>.</span>
-    <span class="subtitle">I'm a 15-year-old FPV drone pilot and web developer from North Carolina.</span>
+    <span class="subtitle">I'm a 16-year-old FPV drone pilot from North Carolina.</span>
     <div class="social-container">
       <div class="social github">
         <img class="social-icon" src="/github.svg" alt="Github logo" />
