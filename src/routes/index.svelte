@@ -81,7 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
   }
 
   .social-link {
@@ -123,12 +123,27 @@
     }
 
     .container {
-      margin: 25px;
+      padding: 25px;
     }
     
     .social-container {
-      gap: 20px;
+      gap: 10px;
       padding: 5px;
+    }
+  }
+
+  @media only screen and (prefers-color-scheme: dark) {
+    .container {
+      color: white;
+      background-color: #121212;
+    }
+
+    .text-container {
+      opacity: 87%;
+    }
+
+    .github {
+      filter: invert();
     }
   }
 </style>
