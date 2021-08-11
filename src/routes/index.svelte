@@ -27,17 +27,26 @@
           <span class="social-label">bigspeed</span>
         </div>
       </a>
+
+      <a class="social-link" href="https://instagram.com/bigspeedfpv">
+        <div class="social instagram">
+          <img class="social-icon" src="/instagram.svg" alt="Instagram logo" />
+          <span class="social-label">bigspeedfpv</span>
+        </div>
+      </a>
     </div>
   </div>
 </div>
 
 <style>
   .container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+
+    padding: 25px;
+    min-height: calc(100% - 50px);
 
     display: flex;
     align-items: center;
@@ -82,6 +91,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
   }
 
   .social-link {
@@ -108,8 +118,13 @@
   .github {
     background-color: black;
   }
+
   .youtube {
     background-color: #ff0000;
+  }
+
+  .instagram {
+    background-color: #E1306C;
   }
 
   .social-icon {
@@ -117,15 +132,11 @@
     filter: invert();
   }
 
-  @media only screen and (max-width: 898px) {
+  @media only screen and (max-width: 950px) {
     .container, .social-container {
       flex-direction: column;
     }
 
-    .container {
-      padding: 25px;
-    }
-    
     .social-container {
       gap: 10px;
       padding: 5px;
