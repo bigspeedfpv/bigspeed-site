@@ -39,8 +39,6 @@
     right: 0;
     bottom: 0;
 
-    padding: 25px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,14 +82,12 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    padding: 10px;
-
-
   }
 
   .social-link {
-    text-decoration: inherit;
-    color: inherit;
+    all: inherit;
+    margin: 0;
+    cursor: pointer;
   }
 
   .social {
@@ -125,9 +121,14 @@
     .container, .social-container {
       flex-direction: column;
     }
+
+    .container {
+      margin: 25px;
+    }
     
     .social-container {
       gap: 20px;
+      padding: 5px;
     }
   }
 </style>
