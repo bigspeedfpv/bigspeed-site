@@ -102,8 +102,6 @@
 
   .social {
     display: flex;
-    gap: 10px;
-    padding: 10px;
     align-items: center;
     justify-content: center;
 
@@ -130,6 +128,12 @@
   .social-icon {
     height: 30px;
     filter: invert();
+
+    margin: 10px;
+  }
+
+  .social-label {
+    margin-right: 10px;
   }
 
   @media only screen and (max-width: 950px) {
