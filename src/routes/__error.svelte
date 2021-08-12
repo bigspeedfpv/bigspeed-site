@@ -9,7 +9,7 @@
 </script>
 
 <script>
-import { onMount } from "svelte";
+  import { onMount } from "svelte";
 
   import { fade } from "svelte/transition"
 
